@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    text-decoration: none;
+
+}
+body
+{
+    margin: 0;
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.navbar
+{
+    width: 100%;
+    overflow: auto;
+    background: white;
+    margin: auto;
+}
+
+.logo
+{
+    float: left;
+    margin: 10px;
+    padding: 0 0 0 50px;
+}
+
+.userico
+{
+    float: right;
+    margin-top: 10px;
+    padding: 10px; 
+}
+
+.lr
+{
+    display: inline-block;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.menu
+{
+    display: inline-block;
+    padding-left: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+    .logo{
+        /*align-items: center;*/
+    }
+}
+
+.menu ul
+{ 
+    margin: 0px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+}
+
+.menu li
+{ 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+}
+
+.menu a
+{
+    color: #045e08;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.menu a.active:after
+{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #045e08;
+    width: 100%;
+    left: 0;
+}
+
+.menu a:after
+{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #045e08;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu a:hover:after
+{ 
+    width: 100%; 
+    left: 0; 
+}
+.contentbox
+{
+    display: flex;
+    height: 100%;
+    margin-top: 25px;
+    color: white;
+}
+.Tagline
+{
+    font-size: 30px;
+}
+.formcontent
+{
+    
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 14%;
+    height: 90%;
+    
+}
+input
+{
+    margin: 10px;
+    font-size: large;
+}
+
+
+.contactform
+{
+    padding: 80px;
+    background: #02020283;
+    border-radius: 20px;
+}
+.button
+{
+    color: black;
+    background-color: green;
+
+}
+
+

@@ -2,58 +2,77 @@
 <html>
     <head>
         <title>Contact us</title>
-        <img src="Logo" alt="Logo">
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="aboutUs.html">About</a></li>
-                <li><a href="../index.html#cities">Cities</a></li>
-                <li><a href="#">Listings</a></li>
-                <li><a class="active" href="#">Contact</a></li>
-            </ul>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/fav/favicon-16x16.png">
+        <link rel="shortcut icon" type="Image/jpg" href="../images/fav/favicon-32x32.png">
+        
+        <title>Contact | SpringFields</title>
     </head>
     <body>
-        <div>
-            <h1>Conatct Us</h1>
-            <p class="Tagline">Our well trained professional marketing team is waiting to answer all your questions at your earliest conveniance</p>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../images/Logo-2.png" alt="logo" height="65px">
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                    <li><a href="../index.html#cities">Cities</a></li>
+                    <li><a href="#">Listings</a></li>
+                    <li><a class="active" href="#">Contact</a></li>
+                </ul>
+                <div class="userico">
+                    <p class="lr"><a href="../html/login.html">Login</a> / <a href="../html/register.html">Register</a></p>
+                    <a href="#"><img src="../images/user.png" alt="userico" height="50px"></a>
+                </div>
+            </div>
+
+        <div class="contentbox">
+            <div class="formcontent">
+            
+                <form class="contactform" action="pageName">
+                    <center><h2>Send Message</h2></center>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <label for="message">Message</label>
+                    <textarea  rows="4" cols="30"></textarea>
+                    <br>
+                    <input class="button" type="submit" value="Send Message">
+        
+        
+                </form>
+            </div>
+            <div>
+                <p class="Tagline">Our well trained professional marketing team is waiting to answer all your questions at your earliest conveniance</p>
+                <img src="location icon" alt="Location icon">
+                <p>212, New Kandy Road, Kaduwela</p>
+    
+                <img src="phoneicon" alt="phoneicon">
+                <p><a href="tel:0774859624">0774859624</a></p>
+                <p><a href="tel:0112458741">0112458741</a></p>
+    
+                <img src="globe" alt="globe icon">
+                <a href="../index.html">springFields.com</a>
+                <a href="email">Support@springfields.com</a>
+    
+            </div>
+
         </div>
         
-        <div>
-            <center><h2>Send Message</h2></center>
-            <form action="pageName">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <br>
-                <label for="phone">Phone</label>
-                <input type="text" name="phone" id="phone">
-                <br>
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-                <br>
-                <label for="message">Message</label>
-                <input type="text" name="message">
-                <br>
-                <input type="submit" value="Send Message">
-    
-    
-            </form>
-        </div>
-        <div>
-            <img src="location icon" alt="Location icon">
-            <p>212, New Kandy Road, Kaduwela</p>
-
-            <img src="phoneicon" alt="phoneicon">
-            <p>0774859624</p>
-            <p>0112458741</p>
-
-            <img src="globe" alt="globe icon">
-            <a href="homepage">springFields.com</a>
-            <a href="email">Support@springfields.com</a>
-
-        </div>
-        <div>
-        <ul>
-            <li></li>
-        </ul>
-        </div>
     </body>
 </html>
