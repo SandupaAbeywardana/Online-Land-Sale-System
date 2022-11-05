@@ -91,7 +91,7 @@
                             $first_Name=$_REQUEST['fname'];
                             $last_Name =$_REQUEST['lname'];
                             $email =$_REQUEST['email'];
-                            $update="UPDATE `user_accounts` SET `FirstName`='".$first_Name."',`LastName`='".$last_Name."',`Email`='".$email."' WHERE Email='".$email."'";
+                            $update="UPDATE `user_accounts` SET `FirstName`='".$first_Name."',`LastName`='".$last_Name."' WHERE Email='".$email."'";
 
                             mysqli_query($conn, $update) or die(mysqli_error());
 
@@ -128,30 +128,57 @@
                     <br>
                     <hr>
                     <br>
-                    <form name="formpswd" method="post" action="">
-                        <div class="accsetdet">
-                            <h3>Change Password</h3>
-                            <div class="subaccset">
-                                <label for="pwd">Old Password :<span class="required"></span></label>
-                                <br>
-                                <input type="password" id="pwd" name="pwd" minlength="8" required>
-                            </div>
-                            <div class="subaccset">
-                                <label for="pwd">New Password :<span class="required"></span></label>
-                                <br>
-                                <input type="password" id="npwd" name="npwd" minlength="8" required>
-                            </div>
-                            <div class="subaccset">
-                                <label for="confirmPwd">Confirm New Password :<span class="required"></span></label>
-                                <br>
-                                <input type="password" id="confirmPwd" minlength="8" required>
-                            </div>
-                            <input name="submit" type="submit" value="Change Password" id="chngpass" class="passbtn">
-                        </div>
-                    </form>
-                    <br>
+                    <?php
+                        /*$status = "";
+                    
+                        if(isset($_POST['newpass']) && $_POST['newpass']==1)
+                        {
+                            $email =$_REQUEST['email'];
+                            $Password = $_REQUEST['pwd'];
+                            $newPassword = $_REQUEST['npwd'];
+                            $confirmPassword = $_REQUEST['confirmPwd'];
+                            $update="UPDATE `user_accounts` SET `user_Password`='".$newPassword."' WHERE Email='".$email."'";
+
+                            mysqli_query($conn, $update) or die(mysqli_error());
+
+                            $_SESSION["Email"]=$email;
+                            $_SESSION["pwd"]=$Password;
+                            $_SESSION["npwd"]=$newPassword;
+                            $_SESSION["confirmPwd"]=$confirmPassword; 
+
+                            $status = "Password Updated Successfully.</br><a href='user-dash.php'><u>Proceed to Profile</u></a>";
+
+                            echo '<p style="color:green; font-size:16px; font-weight: 600;">'.$status.'</p>';
+                        }
+                        else
+                        {
+                        ?>
+                            <form name="formpswd" id="formpswd" method="post" action="">
+                                <input type="hidden" name="newpass" value="1"/>
+                                <div class="accsetdet">
+                                    <h3>Change Password</h3>
+                                    <div class="subaccset">
+                                        <label for="pwd">Old Password :<span class="required"></span></label>
+                                        <br>
+                                        <input type="password" id="pwd" name="pwd" minlength="8" required>
+                                    </div>
+                                    <div class="subaccset">
+                                        <label for="pwd">New Password :<span class="required"></span></label>
+                                        <br>
+                                        <input type="password" id="npwd" name="npwd" minlength="8" required>
+                                    </div>
+                                    <div class="subaccset">
+                                        <label for="confirmPwd">Confirm New Password :<span class="required"></span></label>
+                                        <br>
+                                        <input type="password" id="confirmPwd" minlength="8" required>
+                                    </div>
+                                    <input name="submit" type="submit" value="Change Password" id="chngpass" class="passbtn">
+                                </div>
+                            </form>
+                        <?php } */?>
+                    <!--<br>
                     <hr>
-                    <br>
+                    <br>-->
                     <button onclick="deleteAcc();" id="delete" class="delbtn">DELETE ACCOUNT</button>
                 </div>
             </article>
@@ -166,6 +193,30 @@
                     window.location.replace("accdelete.php");
                 }
             }
+
+            function logout(){
+                window.location.replace("../html/login.html");
+            }
+
+            function index(){
+                window.location.replace("../index.html");
+            }
+
+            /*var formpswd = document.getElementById("formpswd");
+            formpswd.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var npwd = document.getElementById('npwd').value;
+                var confirmPwd = document.getElementById('confirmPwd').value;
+
+                if(npwd == confirmPwd){
+                    formpswd.submit();
+                }
+                else{
+                    alert("Passwords do not Match!");
+                }
+
+            });*/
         </script>
         <script src='../js/user-dash.js'></script>
     </body>
