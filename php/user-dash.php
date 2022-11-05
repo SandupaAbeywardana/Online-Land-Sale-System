@@ -60,6 +60,11 @@
                 </div>
                 <div class="menu-components">
                     <hr>
+                    <div class="menu-element" id="nav_home" onclick="index();">
+                            <img src="../images/icons/home.png"  alt="icon">
+                            <h2>Home Page</h2>
+                    </div>
+                    <hr>
                     <div class="menu-element active" id="nav_settings">
                         <img src="../images/icons/profile.png"  alt="icon">
                         <h2>Account Settings</h2>
