@@ -8,6 +8,7 @@
 
     $exist = mysqli_query($conn,"SELECT * FROM user_accounts where Email='$Email'");
     $row  = mysqli_fetch_array($exist);
+    
     if(is_array($row)){
         
         echo(

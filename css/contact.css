@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 *{
     text-decoration: none;
-
 }
+
 body
 {
     margin: 0;
+    padding-top: 0px;
     background-image: url(../images/1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 
 .navbar
@@ -147,23 +146,37 @@ body
 
 input
 {
-    margin: 10px;
+    /*margin: 10px;*/
+    margin-bottom: 10px;
+    width: 235px;
     font-size: large;
 }
 
 
 .contactform
 {
-    padding: 80px;
+    padding: 60px;
     background: #02020283;
     border-radius: 20px;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 }
 .button
 {
-    color: black;
-    background-color: green;
+    color: #045e08;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 150px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.button:hover
+{
+    background-color: #045e08;
+    color: white;
 }
 
 .iconpart .fa

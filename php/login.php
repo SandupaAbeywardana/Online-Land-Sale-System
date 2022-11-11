@@ -14,7 +14,6 @@ if(isset($_POST['save']))
     $password=$_POST['password'];
 
     $sql=mysqli_query($conn,"SELECT * FROM user_accounts where Email='$email' and user_Password='$password'");
-
     $row  = mysqli_fetch_array($sql);
 
     if(is_array($row))
