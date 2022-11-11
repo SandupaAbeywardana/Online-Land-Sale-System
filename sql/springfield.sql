@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2022 at 03:25 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Nov 11, 2022 at 09:23 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,6 +24,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact_form`
+--
+
+CREATE TABLE `contact_form` (
+  `cName` varchar(50) NOT NULL,
+  `cPhone` varchar(10) NOT NULL,
+  `cEmail` varchar(50) NOT NULL,
+  `cMessage` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_accounts`
 --
 
@@ -37,16 +50,14 @@ CREATE TABLE `user_accounts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user_accounts`
---
-
-INSERT INTO `user_accounts` (`Email`, `FirstName`, `LastName`, `user_Password`, `ProfilePic`, `AccType`) VALUES
-('dakshikanayaniathma@gmail.com', 'Athma', 'Ranathunga', '12345678', 'user-def.png', 'USER'),
-('sandupa.isum@gmail.com', 'Test', 'Abeywardana', '12345678', 'user-def.png', 'USER');
-
---
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `contact_form`
+--
+ALTER TABLE `contact_form`
+  ADD UNIQUE KEY `cMessage` (`cMessage`) USING HASH;
 
 --
 -- Indexes for table `user_accounts`

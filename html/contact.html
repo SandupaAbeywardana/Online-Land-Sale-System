@@ -38,19 +38,19 @@
 
         <div class="contentbox">
             <div class="formcontent">
-                <form class="contactform" action="pageName">
+                <form class="contactform" action="../php/contact.php" method="post">
                     <center><h2>Send Message</h2></center>
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="cnname" id="name">
                     <br>
                     <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="cnphone" id="phone">
                     <br>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="cnemail" id="email">
                     <br>
                     <label for="message">Message</label>
-                    <textarea  rows="4" cols="30"></textarea>
+                    <textarea  rows="4" cols="30" name="cnmessage"></textarea>
                     <br>
                     <input class="button" type="submit" value="Send Message">
                 </form>
