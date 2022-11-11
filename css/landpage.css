@@ -1,0 +1,201 @@
+.navbar
+{
+    width: 100%;
+    overflow: auto;
+    background: white;
+    margin: auto;
+}
+
+.logo
+{
+    float: left;
+    margin: 10px;
+    padding: 0 0 0 50px;
+}
+
+.userico
+{
+    float: right;
+    margin-top: 10px;
+    padding: 10px; 
+}
+.lr
+{
+    display: inline-block;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.menu
+{
+    display: inline-block;
+    padding-left: 80px;
+}
+@media only screen and (max-width: 800px) {
+    .logo{
+        /*align-items: center;*/
+    }
+}
+
+.menu ul
+{ 
+    margin: 0px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+}
+
+.menu li
+{ 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+}
+
+.menu a
+{
+    color: #045e08;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.menu a.active:after
+{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #045e08;
+    width: 100%;
+    left: 0;
+}
+
+.menu a:after
+{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #045e08;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu a:hover:after
+{ 
+    width: 100%; 
+    left: 0; 
+}
+
+#lands
+{
+    display: inline-block;
+    padding: 0 0 100px 50px;
+    /*background-color: red;*/
+    height: 100%;
+    /*background-image: url(../images/7.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+}
+.content2
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.content2 h1
+{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin: 50px 0 20px 0;
+    padding: 0;
+}
+
+/*.content1 h2
+{
+    text-align: left;
+    font-weight: 800;
+    font-size: 25px;
+}*/
+
+/*.line
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}*/
+
+/*.card
+{
+    width: 18%;
+    margin: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 ;
+    transition: .4s;
+    background: #dcf6dc;
+    color: rgb(12, 12, 12);
+}*/
+
+.card
+{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0,6);
+    transition: 0.4s;
+    width:300px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    font-family: sans-serif;
+    float: left;
+    margin:20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.2);
+
+}
+.card img
+{
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -8px);
+}
+
+.cardtext
+{
+    margin: 20px;
+    padding: 20px;
+}
+
+.cityhead, .price, .name
+{
+    margin: 0;
+    padding: 0;
+}
